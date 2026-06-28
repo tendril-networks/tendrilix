@@ -1,0 +1,9 @@
+[workspace]
+resolver = "2"
+members = ["desktop-client", "vitis"]
+exclude = []
+
+[workspace.dependencies]
+heapless = { version = "0.9.3", features = ["serde"] }
+chrono = { version = "0.4", default-features = false, features = ["serde"] }
+serde = { version = "1.0.204", default-features = false, features = ["derive", "alloc"] }
