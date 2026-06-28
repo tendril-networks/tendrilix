@@ -20,7 +20,7 @@
 use std::net::{IpAddr, SocketAddr, ToSocketAddrs};
 
 use serde::Deserialize;
-use vitis::{
+use tendrilix::{
     ipnet::IpNet,
     serialization::KeyBytes,
     types::v1alpha1::net_map::{Peer, RouteKind},

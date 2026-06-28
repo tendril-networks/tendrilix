@@ -36,7 +36,7 @@ use crate::ipnet::IpNet;
 
 #[cfg(not(any(feature = "allowed-ips-ipv4", feature = "allowed-ips-ipv6",)))]
 compile_error!(
-    "vitis requires at least one of the `allowed-ips-ipv4` or `allowed-ips-ipv6` features to be enabled"
+    "tendrilix requires at least one of the `allowed-ips-ipv4` or `allowed-ips-ipv6` features to be enabled"
 );
 
 #[cfg(feature = "alloc")]

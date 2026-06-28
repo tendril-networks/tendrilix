@@ -17,7 +17,7 @@
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
 
-use vitis::{
+use tendrilix::{
     control::reconciler::NetworkMapFetcher as ReconcilerNetworkMapFetcher,
     types::v1alpha1::net_map::NetworkMap,
 };
@@ -83,7 +83,7 @@ impl ReconcilerNetworkMapFetcher for NetworkMapFetcher {
 
     async fn fetch_network_map(
         &self,
-        directories: &[vitis::types::v1alpha1::net_map::Peer],
+        directories: &[tendrilix::types::v1alpha1::net_map::Peer],
     ) -> anyhow::Result<NetworkMap> {
         self.fetch(directories).await
     }

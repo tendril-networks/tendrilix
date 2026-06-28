@@ -33,7 +33,7 @@
     feature = "memory-medium",
     feature = "memory-large",
 )))]
-compile_error!("vitis requires either the `alloc` feature or one `memory-*` feature to be enabled");
+compile_error!("tendrilix requires either the `alloc` feature or one `memory-*` feature to be enabled");
 
 #[cfg(feature = "alloc")]
 extern crate alloc;

@@ -482,11 +482,11 @@ dependencies = [
  "serde",
  "serde_json",
  "socket2",
+ "tendrilix",
  "tokio",
  "tracing",
  "tracing-subscriber",
  "tun-rs",
- "vitis",
 ]
 
 [[package]]
@@ -1591,6 +1591,40 @@ dependencies = [
 ]
 
 [[package]]
+name = "tendrilix"
+version = "0.1.0"
+dependencies = [
+ "aead",
+ "base64",
+ "blake2",
+ "chacha20poly1305",
+ "chrono",
+ "critical-section",
+ "defmt 1.1.0",
+ "defmt-or-log",
+ "embassy-futures",
+ "embassy-net",
+ "embassy-net-driver-channel",
+ "embassy-sync",
+ "embassy-time",
+ "etherparse",
+ "hash32",
+ "hashbrown",
+ "heapless",
+ "hex",
+ "hmac",
+ "log",
+ "portable-atomic",
+ "postcard",
+ "rand_core",
+ "serde",
+ "serde_json",
+ "subtle",
+ "tokio",
+ "x25519-dalek",
+]
+
+[[package]]
 name = "thiserror"
 version = "2.0.18"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1779,40 +1813,6 @@ name = "version_check"
 version = "0.9.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0b928f33d975fc6ad9f86c8f283853ad26bdd5b10b7f1542aa2fa15e2289105a"
-
-[[package]]
-name = "vitis"
-version = "0.1.0"
-dependencies = [
- "aead",
- "base64",
- "blake2",
- "chacha20poly1305",
- "chrono",
- "critical-section",
- "defmt 1.1.0",
- "defmt-or-log",
- "embassy-futures",
- "embassy-net",
- "embassy-net-driver-channel",
- "embassy-sync",
- "embassy-time",
- "etherparse",
- "hash32",
- "hashbrown",
- "heapless",
- "hex",
- "hmac",
- "log",
- "portable-atomic",
- "postcard",
- "rand_core",
- "serde",
- "serde_json",
- "subtle",
- "tokio",
- "x25519-dalek",
-]
 
 [[package]]
 name = "void"

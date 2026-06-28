@@ -36,7 +36,7 @@ use socket2::{Domain, Protocol, SockAddr, Socket, Type};
 use tokio::net::UdpSocket;
 use tracing_subscriber::EnvFilter;
 use tun_rs::{AsyncDevice, DeviceBuilder};
-use vitis::{
+use tendrilix::{
     MTU,
     authz::{ForwardingAuthorizer, GenericAuthorizer},
     control::reconciler::PeerReconciler,
